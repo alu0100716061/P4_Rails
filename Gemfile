@@ -8,6 +8,7 @@ group :development, :test do
   gem 'rspec-rails'
 end
 
+
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
@@ -38,8 +39,8 @@ group :doc do
 end
 
 group :production do
-  gem 'pg'
-  gem 'rails_12factor'
+  gem 'pg', '0.15.1'
+  gem 'rails_12factor', '0.0.2'
 end
 
 # Use ActiveModel has_secure_password
